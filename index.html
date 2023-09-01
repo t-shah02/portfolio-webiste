@@ -2,27 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./tanish_face.svg" />
+    <link rel="icon" type="image/svg+xml" href="./svg/tanish_face.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello World! - Tanish Shah</title>
   </head>
   <body>
     <header
-      class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800"
+      class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4"
     >
       <nav
         class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
         aria-label="Global"
       >
         <div class="flex items-center justify-between">
-          <a class="flex-none text-xl font-semibold dark:text-white" href="#"
-            >Tanish Shah</a
-          >
-
+          <a class="flex-none text-xl font-semibold" href="#">Tanish Shah</a>
           <div class="sm:hidden">
             <button
               type="button"
-              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+              class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm"
               data-hs-collapse="#navbar-collapse-with-animation"
               aria-controls="navbar-collapse-with-animation"
               aria-label="Toggle navigation"
@@ -60,152 +64,210 @@
           <div
             class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5"
           >
-            <a
-              class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
+            <a class="font-medium text-gray-600 hover:text-gray-400" href="#"
               >About</a
             >
-            <a
-              class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-              >Projects</a
+            <a class="font-medium text-gray-600 hover:text-gray-400" href="#"
+              >Work Experience</a
             >
-            <a
-              class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-              href="#"
-              >Contacts</a
+            <a class="font-medium text-gray-600 hover:text-gray-400" href="#"
+              >Projects</a
             >
           </div>
         </div>
       </nav>
     </header>
 
-    <footer>
-      <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <main>
+      <!-- Hero -->
+      <div
+        id="about-section"
+        class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 mt-5"
+      >
         <!-- Grid -->
         <div
-          class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center"
+          class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
         >
           <div>
-            <a
-              class="flex-none text-xl font-semibold text-black dark:text-white"
-              href="#"
-              aria-label="Brand"
-              >Brand</a
+            <h1
+              class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight"
             >
+              Hey I am <span class="text-blue-600">Tanish Shah</span>
+            </h1>
+            <section class="flex flex-col space-y-5">
+              <p class="mt-3 text-lg text-gray-800">
+                I am a Data Science (CS + STAT) major at Simon Fraser
+                University. I love to combine my interests in full stack
+                development and data science together, to build meaningful
+                projects. 👨‍🎓💲📈
+              </p>
+              <p class="mt-3 text-lg text-gray-800">
+                I have experience in Python, JavaScript, TypeScript, Java, Go,
+                React, NextJS, Flask, ExpressJS, PostgreSQL, MongoDB, Firebase,
+                Jest, Selenium, JUnit, pandas, PySpark, NumPy, matplotlib, seaborn and
+                scikit-learn. 🚀💻
+              </p>
+              <img
+                src="https://ghchart.rshah.org/t-shah02"
+                alt="github contribution chart"
+                class="block rounded-md mt-5"
+              />
+              <p class="mt-3 text-lg text-gray-800">
+                Feel free to connect with me for internship opportunities!
+              </p>
+              <div class="ml-5 flex justify-start space-x-10">
+                <a href="mailto:tanish_shah@sfu.ca" target="_blank">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/t-shah02" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tanish-shah-888121210/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </section>
+          </div>
+
+          <div class="relative ml-4">
+            <img
+              id="intro-hero-image"
+              class="w-full rounded-md"
+              src="./images/tanish_one.png"
+              alt="Sexy photos of Tanish Shah"
+            />
+            <div
+              class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6"
+            ></div>
+            <div class="absolute bottom-0 left-0">
+              <svg
+                class="w-2/3 ml-auto h-auto text-white"
+                width="630"
+                height="451"
+                viewBox="0 0 630 451"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="531"
+                  y="352"
+                  width="99"
+                  height="99"
+                  fill="currentColor"
+                />
+                <rect
+                  x="140"
+                  y="352"
+                  width="106"
+                  height="99"
+                  fill="currentColor"
+                />
+                <rect
+                  x="482"
+                  y="402"
+                  width="64"
+                  height="49"
+                  fill="currentColor"
+                />
+                <rect
+                  x="433"
+                  y="402"
+                  width="63"
+                  height="49"
+                  fill="currentColor"
+                />
+                <rect
+                  x="384"
+                  y="352"
+                  width="49"
+                  height="50"
+                  fill="currentColor"
+                />
+                <rect
+                  x="531"
+                  y="328"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                />
+                <rect
+                  x="99"
+                  y="303"
+                  width="49"
+                  height="58"
+                  fill="currentColor"
+                />
+                <rect
+                  x="99"
+                  y="352"
+                  width="49"
+                  height="50"
+                  fill="currentColor"
+                />
+                <rect
+                  x="99"
+                  y="392"
+                  width="49"
+                  height="59"
+                  fill="currentColor"
+                />
+                <rect
+                  x="44"
+                  y="402"
+                  width="66"
+                  height="49"
+                  fill="currentColor"
+                />
+                <rect
+                  x="234"
+                  y="402"
+                  width="62"
+                  height="49"
+                  fill="currentColor"
+                />
+                <rect
+                  x="334"
+                  y="303"
+                  width="50"
+                  height="49"
+                  fill="currentColor"
+                />
+                <rect x="581" width="49" height="49" fill="currentColor" />
+                <rect x="581" width="49" height="64" fill="currentColor" />
+                <rect
+                  x="482"
+                  y="123"
+                  width="49"
+                  height="49"
+                  fill="currentColor"
+                />
+                <rect
+                  x="507"
+                  y="124"
+                  width="49"
+                  height="24"
+                  fill="currentColor"
+                />
+                <rect
+                  x="531"
+                  y="49"
+                  width="99"
+                  height="99"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <!-- End SVG-->
           </div>
           <!-- End Col -->
-
-          <ul class="text-center">
-            <li
-              class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600"
-            >
-              <a
-                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200"
-                href="#"
-              >
-                About
-              </a>
-            </li>
-            <li
-              class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600"
-            >
-              <a
-                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200"
-                href="#"
-              >
-                Services
-              </a>
-            </li>
-            <li
-              class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600"
-            >
-              <a
-                class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200"
-                href="#"
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-          <!-- End Col -->
-
-          <!-- Social Brands -->
-          <div class="md:text-right space-x-2">
-            <a
-              class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
-              href="#"
-            >
-              <svg
-                class="w-3.5 h-3.5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
-                />
-              </svg>
-            </a>
-            <a
-              class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
-              href="#"
-            >
-              <svg
-                class="w-3.5 h-3.5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                />
-              </svg>
-            </a>
-            <a
-              class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
-              href="#"
-            >
-              <svg
-                class="w-3.5 h-3.5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                />
-              </svg>
-            </a>
-            <a
-              class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
-              href="#"
-            >
-              <svg
-                class="w-3.5 h-3.5"
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z"
-                />
-              </svg>
-            </a>
-          </div>
-          <!-- End Social Brands -->
         </div>
         <!-- End Grid -->
       </div>
-    </footer>
+      <!-- End Hero -->
+    </main>
 
     <script src="./node_modules/preline/dist/preline.js"></script>
     <script type="module" src="/src/main.ts"></script>

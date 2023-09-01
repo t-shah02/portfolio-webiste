@@ -1,5 +1,6 @@
 import "./style.css";
 
+
 const footerYearParagraph: HTMLParagraphElement | null = document.querySelector("#footer-year-p");
 
 if (footerYearParagraph) {
