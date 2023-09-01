@@ -6,8 +6,20 @@
   animation: fade-in 350ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 i {
   scale: 1.4;
+}
+
+.exp-card {
+  transition: scale 200ms ease-in-out;
+}
+
+.exp-card:hover {
+  scale: 1.05;
 }
 
 #intro-hero-image {

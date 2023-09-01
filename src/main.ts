@@ -13,6 +13,7 @@ const consoleCommandsAndOutputs = [
     'fmt.Println("Hello World") '
 ];
 
+
 new Typed('#prog-lang-heading', {
     strings: consoleCommandsAndOutputs,
     typeSpeed: 50,
