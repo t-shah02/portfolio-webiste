@@ -759,7 +759,7 @@
                 </h2>
               </div>
               <div class="mt-5">
-                <form>
+                <form id="message-me-form">
                   <div class="flex flex-col space-y-3">
                     <label
                       for="message-sender-name"
@@ -767,8 +767,9 @@
                       >Enter your name</label
                     >
                     <input
+                      required
                       type="text"
-                      id="message-sender-name"
+                      name="message-sender-name"
                       class="py-3 px-4 block w-full border border-gray-300 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                       placeholder="Ex: Bob Laxter"
                     />
@@ -778,8 +779,9 @@
                       >Enter your email</label
                     >
                     <input
+                      required
                       type="email"
-                      id="message-sender-email"
+                      name="message-sender-email"
                       class="py-3 px-4 block w-full border border-gray-300 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                       placeholder="Ex: boblaxter1234@helloworld.com"
                     />
@@ -789,7 +791,8 @@
                       >Type a message</label
                     >
                     <textarea
-                      id="message-sender-body"
+                      required
+                      name="message-sender-body"
                       class="py-3 px-4 block w-full border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                       rows="3"
                       placeholder="Id love to offer you a job! 😮"
@@ -809,6 +812,8 @@
         </div>
       </div>
     </main>
+
+    <canvas id="screen-bubble-canvas"></canvas>
 
     <script defer type="module" src="/src/main.ts"></script>
   </body>
