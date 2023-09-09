@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.15",
+    "eslint-plugin-html": "^7.1.0",
     "postcss": "^8.4.29",
     "prettier": "3.0.3",
     "tailwindcss": "^3.3.3",
@@ -16,7 +17,6 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "preline": "^1.9.0",
     "typed.js": "^2.0.16"
   }
 }

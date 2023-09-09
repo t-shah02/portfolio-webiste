@@ -2,7 +2,7 @@ import ScreenCanvas from "./canvasEnvironment/screen";
 import "./style.css";
 // @ts-ignore
 import Typed from 'typed.js';
-import { IEmailRequestBody } from "server/src/types/email"
+import { IEmailRequestBody } from "server/src/types/email";
 
 const SERVER_URL = import.meta.env.DEV ? "http://localhost:3000" : "";
 
@@ -49,11 +49,15 @@ if (techTags) {
 const messageMeForm = document.querySelector("#message-me-form");
 const messageSendBtn = document.querySelector("#mesage-send-btn");
 const messageLoadingSpinner = document.querySelector("#email-loading-spinner");
+const successToast = document.querySelector("#success-toast");
+const failureToast = document.querySelector("#failure-toast");
 
-if (messageMeForm && messageSendBtn && messageLoadingSpinner) {
+if (messageMeForm && messageSendBtn && messageLoadingSpinner && successToast && failureToast) {
     const actualMessageMeForm = (messageMeForm) as HTMLFormElement;
     const actualMessageSendBtn = (messageSendBtn) as HTMLButtonElement;
     const actualMessageLoadingSpinner = (messageLoadingSpinner) as HTMLDivElement;
+    const actualSuccessToast = (successToast) as HTMLDivElement;
+    const actualFailureToast = (failureToast) as HTMLDivElement;
 
     actualMessageMeForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -86,6 +90,20 @@ if (messageMeForm && messageSendBtn && messageLoadingSpinner) {
         actualMessageSendBtn.disabled = false;
         actualMessageLoadingSpinner.classList.add("hidden");
 
+        if (response.ok) {
+            if (!failureToast.classList.contains("hidden")) {
+                failureToast.classList.add("hidden");
+            }
+
+            successToast.classList.remove("hidden");
+        }
+        else {
+            if (!successToast.classList.contains("hidden")) {
+                successToast.classList.add("hidden");
+            }
+
+            failureToast.classList.remove("hidden");
+        }
 
     });
 }

@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import helmet from "helmet";
 import { IEmailRequestBody } from "./types/email";
 import { sendEmail } from "./util/email";
 import { SERVER_PORT } from "./constants/server";
@@ -9,6 +10,7 @@ const app = express();
 app.use(cors({
     origin: ["http://localhost:5173"]
 }));
+app.use(helmet());
 app.use(express.json());
 
 app.post("/api/sendemail", async (req, res) => {

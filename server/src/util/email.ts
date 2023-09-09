@@ -64,7 +64,6 @@ export async function sendEmail(emailBody: IEmailRequestBody): Promise<void> {
     });
 
     if (!response.ok) {
-        console.log("hello world adada")
         throw new Error(`The EmailJS server responded with a status code of ${response.status}`);
     }
 
