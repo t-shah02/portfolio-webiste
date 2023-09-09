@@ -20,13 +20,13 @@ app.post("/api/sendemail", async (req, res) => {
         await sendEmail(emailBody);
         res.json({
             status: "ok",
-            message: "The email was successfully sent"
+            message: "The message was successfully sent to me"
         });
     } catch (exception) {
-        console.debug(exception);
+        const errorMessage = (exception as Error).message;
         res.status(400).json({
             status: "reject",
-            message: "Please ensure the email is in a valid format and that the name and message body doesn't contain any offensive language"
+            message: errorMessage
         });
     }
 

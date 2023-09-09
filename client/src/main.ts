@@ -2,7 +2,7 @@ import ScreenCanvas from "./canvasEnvironment/screen";
 import "./style.css";
 // @ts-ignore
 import Typed from 'typed.js';
-import { IEmailRequestBody } from "server/src/types/email";
+import { IEmailRequestBody, IEmailResponseBody } from "server/src/types/email";
 
 const SERVER_URL = import.meta.env.DEV ? "http://localhost:3000" : "";
 
@@ -47,17 +47,21 @@ if (techTags) {
 }
 
 const messageMeForm = document.querySelector("#message-me-form");
-const messageSendBtn = document.querySelector("#mesage-send-btn");
+const messageSendBtn = document.querySelector("#message-send-btn");
 const messageLoadingSpinner = document.querySelector("#email-loading-spinner");
 const successToast = document.querySelector("#success-toast");
 const failureToast = document.querySelector("#failure-toast");
-
-if (messageMeForm && messageSendBtn && messageLoadingSpinner && successToast && failureToast) {
+const successText = document.querySelector("#success-text");
+const failureText = document.querySelector("#failure-text");
+if (messageMeForm && messageSendBtn && messageLoadingSpinner
+    && successToast && failureToast && successText && failureText) {
     const actualMessageMeForm = (messageMeForm) as HTMLFormElement;
     const actualMessageSendBtn = (messageSendBtn) as HTMLButtonElement;
     const actualMessageLoadingSpinner = (messageLoadingSpinner) as HTMLDivElement;
     const actualSuccessToast = (successToast) as HTMLDivElement;
     const actualFailureToast = (failureToast) as HTMLDivElement;
+    const actualSuccessText = (successText) as HTMLParagraphElement;
+    const actualFailureText = (failureText) as HTMLParagraphElement;
 
     actualMessageMeForm.addEventListener("submit", async (event) => {
         event.preventDefault();
@@ -76,8 +80,15 @@ if (messageMeForm && messageSendBtn && messageLoadingSpinner && successToast && 
         };
 
         const emailEndpointURL = `${SERVER_URL}/api/sendemail`;
+
         actualMessageSendBtn.disabled = true;
         actualMessageLoadingSpinner.classList.remove("hidden");
+        if (!actualSuccessToast.classList.contains("hidden")) {
+            actualSuccessToast.classList.add("hidden");
+        }
+        if (!actualFailureToast.classList.contains("hidden")) {
+            actualFailureToast.classList.add("hidden");
+        }
 
         const response = await fetch(emailEndpointURL, {
             method: "POST",
@@ -86,23 +97,26 @@ if (messageMeForm && messageSendBtn && messageLoadingSpinner && successToast && 
                 "Content-Type": "application/json"
             }
         });
+        const { message: responseMessage }: IEmailResponseBody = await response.json();
 
         actualMessageSendBtn.disabled = false;
         actualMessageLoadingSpinner.classList.add("hidden");
 
         if (response.ok) {
-            if (!failureToast.classList.contains("hidden")) {
-                failureToast.classList.add("hidden");
+            if (!actualFailureToast.classList.contains("hidden")) {
+                actualFailureToast.classList.add("hidden");
             }
+            actualSuccessToast.classList.remove("hidden");
 
-            successToast.classList.remove("hidden");
+            actualSuccessText.innerText = responseMessage;
         }
         else {
-            if (!successToast.classList.contains("hidden")) {
-                successToast.classList.add("hidden");
+            if (!actualSuccessToast.classList.contains("hidden")) {
+                actualSuccessToast.classList.add("hidden");
             }
+            actualFailureToast.classList.remove("hidden");
 
-            failureToast.classList.remove("hidden");
+            actualFailureText.innerText = responseMessage;
         }
 
     });

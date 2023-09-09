@@ -1,8 +1,13 @@
 
 export interface IEmailRequestBody {
-    senderName: string
+    senderName: string,
     senderEmail: string,
-    messageBody: string;
+    messageBody: string
+}
+
+export interface IEmailResponseBody {
+    status: string,
+    message: string
 }
 
 export interface IEmailJSSendBody {

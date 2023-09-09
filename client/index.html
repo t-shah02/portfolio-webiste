@@ -811,7 +811,7 @@
                       </svg>
                       <span class="sr-only">Loading...</span>
                   </div>
-                  <div id="success-toast" class="hidden max-w-xs bg-white border rounded-md shadow-lg" role="alert">
+                  <div id="success-toast" class="hidden max-w-xs bg-white border rounded-md shadow-lg ml-auto mr-auto" role="alert">
                     <div class="flex p-4">
                       <div class="flex-shrink-0">
                         <svg class="h-4 w-4 text-green-500 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -819,13 +819,12 @@
                         </svg>
                       </div>
                       <div class="ml-3">
-                        <p class="text-sm text-gray-700">
-                          The message was sent to me successfully!
-                        </p>
+                        <p id="success-text" class="text-sm text-gray-700">
+=                        </p>
                       </div>
                     </div>
                   </div>
-                  <div id="failure-toast" class="hidden max-w-xs bg-white border rounded-md shadow-lg" role="alert">
+                  <div id="failure-toast" class="hidden max-w-xs bg-white border rounded-md shadow-lg ml-auto mr-auto" role="alert">
                     <div class="flex p-4">
                       <div class="flex-shrink-0">
                         <svg class="h-4 w-4 text-red-500 mt-0.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -833,9 +832,7 @@
                         </svg>
                       </div>
                       <div class="ml-3">
-                        <p class="text-sm text-gray-700">
-                          There was an error sending this message! Please ensure the email has proper formatting
-                          and the name and message body fields contain appropriate language.
+                        <p id="failure-text" class="text-sm text-gray-700">
                         </p>
                       </div>
                     </div>
