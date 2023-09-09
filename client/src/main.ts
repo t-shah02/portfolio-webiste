@@ -2,7 +2,7 @@ import ScreenCanvas from "./canvasEnvironment/screen";
 import "./style.css";
 // @ts-ignore
 import Typed from 'typed.js';
-import { IEmailRequestBody, IEmailResponseBody } from "server/src/types/email";
+import { IEmailRequestBody, IEmailResponseBody } from "../../server/src/types/email";
 
 const SERVER_URL = import.meta.env.DEV ? "http://localhost:3000" : "";
 

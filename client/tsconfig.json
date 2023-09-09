@@ -17,11 +17,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-
-    "paths": {
-      "preline": ["../node_modules/preline/"]
-    }
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
 }
