@@ -2,6 +2,10 @@ import ScreenCanvas from "./canvasEnvironment/screen";
 import "./style.css";
 // @ts-ignore
 import Typed from 'typed.js';
+import { IEmailRequestBody } from "server/src/types/email"
+
+const SERVER_URL = import.meta.env.DEV ? "http://localhost:3000" : "";
+
 
 const CONSOLE_COMMANDS_AND_OUTPUT = [
     "cat hello_world.py",
@@ -43,15 +47,44 @@ if (techTags) {
 }
 
 const messageMeForm = document.querySelector("#message-me-form");
-if (messageMeForm) {
+const messageSendBtn = document.querySelector("#mesage-send-btn");
+const messageLoadingSpinner = document.querySelector("#email-loading-spinner");
+
+if (messageMeForm && messageSendBtn && messageLoadingSpinner) {
     const actualMessageMeForm = (messageMeForm) as HTMLFormElement;
-    actualMessageMeForm.addEventListener("submit", (event) => {
+    const actualMessageSendBtn = (messageSendBtn) as HTMLButtonElement;
+    const actualMessageLoadingSpinner = (messageLoadingSpinner) as HTMLDivElement;
+
+    actualMessageMeForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
-        // const formData = new FormData(actualMessageMeForm);
-        // const senderName = formData.get("message-sender-name");
-        // const senderEmail = formData.get("message-sender-email");
-        // const senderMessageBody = formData.get("message-sender-body");
+        const formData = new FormData(actualMessageMeForm);
+        const senderName = formData.get("message-sender-name")?.toString() || "";
+        const senderEmail = formData.get("message-sender-email")?.toString() || "";
+        const messageBody = formData.get("message-sender-body")?.toString() || "";
+
+        if (!senderName || !senderEmail || !messageBody) return;
+
+        const emailBody: IEmailRequestBody = {
+            senderEmail,
+            senderName,
+            messageBody
+        };
+
+        const emailEndpointURL = `${SERVER_URL}/api/sendemail`;
+        actualMessageSendBtn.disabled = true;
+        actualMessageLoadingSpinner.classList.remove("hidden");
+
+        const response = await fetch(emailEndpointURL, {
+            method: "POST",
+            body: JSON.stringify(emailBody),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+
+        actualMessageSendBtn.disabled = false;
+        actualMessageLoadingSpinner.classList.add("hidden");
 
 
     });
@@ -61,7 +94,7 @@ const screenCanvas = document.querySelector("#screen-bubble-canvas");
 if (screenCanvas) {
     const actualScreenCanvas = screenCanvas as HTMLCanvasElement;
     const canvasContext = actualScreenCanvas.getContext("2d");
-    
+
     if (canvasContext) {
         const screenCanvasEnvironment = new ScreenCanvas(actualScreenCanvas, canvasContext);
         screenCanvasEnvironment.init();
