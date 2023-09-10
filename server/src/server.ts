@@ -33,6 +33,13 @@ app.post("/api/sendemail", async (req, res) => {
 
 });
 
+app.get("/api/health", (_, res) => {
+    res.json({
+        status: "ok",
+        message: "This server is healthy and handling your requests strongly! 💪"
+    });
+})
+
 app.listen(SERVER_PORT, () => {
     const runningMessage = `The server is running at port: ${SERVER_PORT}`;
     console.debug(runningMessage);
