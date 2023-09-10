@@ -3,12 +3,12 @@ import cors from "cors";
 import helmet from "helmet";
 import { IEmailRequestBody } from "./types/email";
 import { sendEmail } from "./util/email";
-import { SERVER_PORT } from "./constants/server";
+import { SERVER_PORT, CLIENT_BASE_URL } from "./constants/server";
 
 
 const app = express();
 app.use(cors({
-    origin: ["http://localhost:5173"]
+    origin: [CLIENT_BASE_URL]
 }));
 app.use(helmet());
 app.use(express.json());
