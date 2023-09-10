@@ -12,6 +12,7 @@ app.use(cors({
 }));
 app.use(helmet());
 app.use(express.json());
+app.use(express.static("public"));
 
 app.post("/api/sendemail", async (req, res) => {
     const emailBody: IEmailRequestBody = req.body;
