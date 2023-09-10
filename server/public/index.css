@@ -1,0 +1,40 @@
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    transition: background-color 200ms ease-in-out;
+}
+
+h1 {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 10px;
+    transition: scale 150ms ease-in-out;
+}
+
+img:hover {
+    cursor: pointer;
+    scale: 1.01;
+}
+
+#link-container {
+    display: flex;
+    justify-content: space-around;
+}
