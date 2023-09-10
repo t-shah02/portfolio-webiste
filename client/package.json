@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "typed.js": "^2.0.16"
+  },
+  "engines": {
+    "node": "20.4.0"
   }
 }
