@@ -4,6 +4,7 @@ import helmet from "helmet";
 import { IEmailRequestBody } from "./types/email";
 import { sendEmail } from "./util/email";
 import { SERVER_PORT, CLIENT_BASE_URL } from "./constants/server";
+import redisRateLimiter from "./util/redis";
 
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(cors({
 app.use(helmet());
 app.use(express.json());
 app.use(express.static("public"));
+app.use("/api", redisRateLimiter);
 
 app.post("/api/sendemail", async (req, res) => {
     const emailBody: IEmailRequestBody = req.body;

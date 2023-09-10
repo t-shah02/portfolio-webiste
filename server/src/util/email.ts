@@ -8,6 +8,7 @@ import {
     BASE_NODEJS_API_URL,
     SWEAR_WORDS
 } from "../constants/email";
+import { SERVER_ENV } from "../constants/server";
 
 const isValidEmail = (email: string) => EMAIL_REGEX.test(email);
 
@@ -22,6 +23,7 @@ function isSFWString(targetString: string): boolean {
 }
 
 export async function sendEmail(emailBody: IEmailRequestBody): Promise<void> {
+
     const { senderName, senderEmail, messageBody } = emailBody;
 
     if (!senderName || !sendEmail || !messageBody) {
@@ -55,16 +57,19 @@ export async function sendEmail(emailBody: IEmailRequestBody): Promise<void> {
         }
     };
 
-    const response = await fetch(sendEndpointURL, {
-        method: "POST",
-        body: JSON.stringify(emailJSPostBody),
-        headers: {
-            "Content-Type": "application/json"
-        }
-    });
+    if (SERVER_ENV !== "development") {
+        const response = await fetch(sendEndpointURL, {
+            method: "POST",
+            body: JSON.stringify(emailJSPostBody),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
 
-    if (!response.ok) {
-        throw new Error(`The EmailJS server responded with a status code of ${response.status}`);
+        if (!response.ok) {
+            throw new Error(`The EmailJS server responded with a status code of ${response.status}`);
+        }
+
     }
 
 }  
