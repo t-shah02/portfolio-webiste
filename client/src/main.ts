@@ -4,7 +4,7 @@ import "./style.css";
 import Typed from 'typed.js';
 import { IEmailRequestBody, IEmailResponseBody } from "../../server/src/types/email";
 
-const SERVER_URL = import.meta.env.SERVER_BASE_URL || "http://localhost:3000";
+const SERVER_URL = import.meta.env.VITE_SERVER_BASE_URL || "http://localhost:3000";
 
 const CONSOLE_COMMANDS_AND_OUTPUT = [
     "cat hello_world.py",
