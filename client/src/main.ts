@@ -4,7 +4,7 @@ import "./style.css";
 import Typed from 'typed.js';
 import { IEmailRequestBody, IEmailResponseBody } from "../../server/src/types/email";
 
-const SERVER_URL = import.meta.env.SERVER_BASE_URL;
+const SERVER_URL = import.meta.env.SERVER_BASE_URL || "http://localhost:3000";
 
 const CONSOLE_COMMANDS_AND_OUTPUT = [
     "cat hello_world.py",
@@ -96,7 +96,15 @@ if (messageMeForm && messageSendBtn && messageLoadingSpinner
                 "Content-Type": "application/json"
             }
         });
-        const { message: responseMessage }: IEmailResponseBody = await response.json();
+
+        let responseMessage: string = "";
+        try {
+            const { message }: IEmailResponseBody = await response.json();
+            responseMessage = message;
+        }
+        catch (exception) {
+            responseMessage = "My backend server is unreachable at this time, please try again later";
+        }
 
         actualMessageSendBtn.disabled = false;
         actualMessageLoadingSpinner.classList.add("hidden");
