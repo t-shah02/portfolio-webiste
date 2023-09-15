@@ -1,4 +1,3 @@
-import ScreenCanvas from "./canvasEnvironment/screen";
 import "./style.css";
 // @ts-ignore
 import Typed from 'typed.js';
