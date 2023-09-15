@@ -1,9 +1,9 @@
-import CanvasObject from "../canvasObjects/object";
+import ICanvasObject from "./object";
 
-interface CanvasEnvironment {
+interface ICanvasEnvironment {
     canvas: HTMLCanvasElement
     context: CanvasRenderingContext2D
-    objects: CanvasObject[]
+    objects: ICanvasObject[]
 
     init: () => void
     getWidth: () => number
@@ -12,4 +12,4 @@ interface CanvasEnvironment {
 
 }
 
-export default CanvasEnvironment;
+export default ICanvasEnvironment;

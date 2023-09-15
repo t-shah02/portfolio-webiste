@@ -1,12 +1,12 @@
 
-export interface CanvasObjectProperties {
+export interface ICanvasObjectProperties {
     x: number
     y: number
     dx: number
     dy: number
 }
 
-interface CanvasObject {
+interface ICanvasObject {
     x: number
     y: number
     dx: number
@@ -16,4 +16,4 @@ interface CanvasObject {
     draw: () => void
 }
 
-export default CanvasObject;
+export default ICanvasObject;

@@ -1,7 +1,7 @@
-import CanvasEnvironment from "../canvasEnvironment/environment";
-import CanvasObject from "./object";
+import ICanvasEnvironment from "../types/environment";
+import ICanvasObject from "../types/object";
 
-class Bubble implements CanvasObject {
+class Bubble implements ICanvasObject {
     public x: number;
     public y: number;
     public dx: number;
@@ -9,11 +9,11 @@ class Bubble implements CanvasObject {
     public radius: number;
     public color: string;
 
-    private _environment: CanvasEnvironment
+    private _environment: ICanvasEnvironment;
 
     static BUBBLE_COLORS: string[] = ["green", "red", "brown", "blue", "pink", "purple"];
 
-    constructor(x: number, y: number, dx: number, dy: number, radius: number, environment: CanvasEnvironment) {
+    constructor(x: number, y: number, dx: number, dy: number, radius: number, environment: ICanvasEnvironment) {
         this.x = x;
         this.y = y;
         this.dx = dx;

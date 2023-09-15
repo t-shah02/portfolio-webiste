@@ -15,8 +15,8 @@ export const redisRateLimiterStore = new RedisStore({
 });
 
 const redisRateLimiter = rateLimit({
-    windowMs: 1000 * 25,
-    max: 5,
+    windowMs: 1000 * 60 * 60 * 10,
+    max: 2,
     standardHeaders: true,
     legacyHeaders: false,
     store: redisRateLimiterStore

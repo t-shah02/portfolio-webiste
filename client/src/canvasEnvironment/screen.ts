@@ -1,12 +1,12 @@
 import Bubble from "../canvasObjects/bubble";
-import CanvasObject from "../canvasObjects/object";
+import ICanvasObject from "../types/object";
 import { getRandomCanvasObjectProperties, randomNumberFromInterval } from "../util";
-import CanvasEnvironment from "./environment";
+import ICanvasEnvironment from "../types/environment";
 
-class ScreenCanvas implements CanvasEnvironment {
+class ScreenCanvas implements ICanvasEnvironment {
     canvas: HTMLCanvasElement;
     context: CanvasRenderingContext2D;
-    objects: CanvasObject[];
+    objects: ICanvasObject[];
 
     static BUBBLE_COUNT: number = 50;
 

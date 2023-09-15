@@ -6,10 +6,7 @@
     "build": "concurrently \"yarn workspace server build\" \"yarn workspace client build\""
   },
   "private": true,
-  "workspaces": [
-    "client",
-    "server"
-  ],
+  "workspaces": ["client", "server"],
   "repository": "https://github.com/t-shah02/portfolio-website.git",
   "author": "Tanish Shah <connecttanish@gmail.com>",
   "license": "MIT",

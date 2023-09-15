@@ -128,15 +128,3 @@ if (messageMeForm && messageSendBtn && messageLoadingSpinner
 
     });
 }
-
-const screenCanvas = document.querySelector("#screen-bubble-canvas");
-if (screenCanvas) {
-    const actualScreenCanvas = screenCanvas as HTMLCanvasElement;
-    const canvasContext = actualScreenCanvas.getContext("2d");
-
-    if (canvasContext) {
-        const screenCanvasEnvironment = new ScreenCanvas(actualScreenCanvas, canvasContext);
-        screenCanvasEnvironment.init();
-        screenCanvasEnvironment.animate();
-    }
-}

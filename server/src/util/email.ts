@@ -6,7 +6,13 @@ import {
     EMAILJS_SERVICE_ID,
     EMAIL_REGEX,
     BASE_NODEJS_API_URL,
-    SWEAR_WORDS
+    SWEAR_WORDS,
+    MINIMUM_EMAIL_LENGTH,
+    MAXIMUM_EMAIL_LENGTH,
+    MINIMUM_NAME_LENGTH,
+    MAXIMUM_NAME_LENGTH,
+    MINIMUM_MESSAGE_BODY_LENGTH,
+    MAXIMUM_MESSAGE_BODY_LENGTH
 } from "../constants/email";
 import { SERVER_ENV } from "../constants/server";
 
@@ -32,12 +38,28 @@ export async function sendEmail(emailBody: IEmailRequestBody): Promise<void> {
 
     const finalSenderEmail = senderEmail.toLowerCase();
 
+    if (finalSenderEmail.length < MINIMUM_EMAIL_LENGTH || finalSenderEmail.length > MAXIMUM_EMAIL_LENGTH) {
+        throw new Error(`${finalSenderEmail} is not between ${MINIMUM_EMAIL_LENGTH} and ${MAXIMUM_EMAIL_LENGTH} characters long`);
+    }
+
     if (!isValidEmail(finalSenderEmail)) {
         throw new Error(`${finalSenderEmail} is not in an valid email format`);
     }
 
+    if (!isSFWString(finalSenderEmail)) {
+        throw new Error(`${finalSenderEmail} is not an appropriate email address`);
+    }
+
+    if (senderName.length < MINIMUM_NAME_LENGTH || senderName.length > MAXIMUM_NAME_LENGTH) {
+        throw new Error(`${senderName} is not between ${MINIMUM_NAME_LENGTH} and ${MAXIMUM_NAME_LENGTH} characters long`);
+    }
+
     if (!isSFWString(senderName)) {
         throw new Error(`${senderName} is not an appropriate name`);
+    }
+
+    if (messageBody.length < MINIMUM_MESSAGE_BODY_LENGTH || messageBody.length > MAXIMUM_MESSAGE_BODY_LENGTH) {
+        throw new Error(`${messageBody} is not between ${MINIMUM_MESSAGE_BODY_LENGTH} and ${MAXIMUM_MESSAGE_BODY_LENGTH} characters long`);
     }
 
     if (!isSFWString(messageBody)) {

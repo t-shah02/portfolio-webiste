@@ -6,15 +6,15 @@ import { sendEmail } from "./util/email";
 import { SERVER_PORT, CLIENT_BASE_URL } from "./constants/server";
 import redisRateLimiter from "./util/redis";
 
-
 const app = express();
+
 app.use(cors({
     origin: [CLIENT_BASE_URL]
 }));
 app.use(helmet());
 app.use(express.json());
 app.use(express.static("public"));
-app.use("/api", redisRateLimiter);
+app.use("/api/sendemail", redisRateLimiter);
 
 app.post("/api/sendemail", async (req, res) => {
     const emailBody: IEmailRequestBody = req.body;
