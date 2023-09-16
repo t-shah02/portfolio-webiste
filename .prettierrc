@@ -6,8 +6,6 @@
   "insertPragma": false,
   "singleAttributePerLine": false,
   "bracketSameLine": false,
-  "jsxBracketSameLine": false,
-  "jsxSingleQuote": false,
   "printWidth": 80,
   "proseWrap": "preserve",
   "quoteProps": "as-needed",
@@ -15,9 +13,7 @@
   "semi": true,
   "singleQuote": false,
   "tabWidth": 2,
-  "trailingComma": "es5",
+  "trailingComma": "all",
   "useTabs": false,
-  "embeddedLanguageFormatting": "auto",
-  "vueIndentScriptAndStyle": false,
-  "parser": "json"
+  "parser": "typescript"
 }
