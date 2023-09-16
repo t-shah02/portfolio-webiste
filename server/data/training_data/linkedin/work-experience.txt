@@ -1,0 +1,23 @@
+Software Developer (Full Stack)
+Operto Guest Technologies - Co-op
+Sep 2023 - Present
+Vancouver, British Colombia | Onsite
+
+
+Software Developer (Full Stack)
+Health Canada - Co-op
+Jan 2023 - Apr 2023
+Ottawa, Ontario, Canada | Remote
+
+I built and maintained a multitude of internal/external web applications that were being used in the Data Science unit I was assigned to. My main tech stack in this job consisted of Typescript, NextJS, React, and Tailwind.
+
+Some accomplishments that I am proud of from this co-op experience was how I converted a legacy Javascript React codebase to Typescript, making the developer experience more type-safe, and I also added API and component test suites using Jest, resulting in >= 90% code coverage. 
+
+I also started significant work on a dashboarding application, that allows employees in the Health Canada organization to control group/organization hierarchies, memberships to groups, service accounts, and LDAP attributes. I worked with a senior developer to connect a SPARQL and RabbitMQ-based backend architecture to a NextJS client-facing application. I was heavily involved in designing user interfaces based on wireframes, documenting/creating issues and tickets on the Gitlab repo board, and designing API endpoints that handled CRUD operations and communication to our lower-level services.
+
+Backend Software Developer
+eWorx Technology Ltd - Contract Part Time
+Sep 2022 - Nov 2022 
+Edmonton, Alberta, Canada | Remote
+
+I designed a Python microservice using the Pandas library to translate an SQL-like JSON query language and return the relevant records from a csv file, database or Excel spreadsheet. The final query engine I built was able to handle filtering operations, group-by-aggregation statistics, complex regex expressions, and removing bad data from the dataset. I deployed my microservice as a RESTful API service that was consumed by a full-stack web application written in Django.

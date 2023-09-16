@@ -1,0 +1,1500 @@
+username: IndoorOtaku
+total_anime_complete: 249
+total_anime_watching: 17
+total_anime_plan_to_watch: 66
+total_anime_dropped: 7
+total_anime_on_hold: 3
+
+title: "Oshi no Ko"
+show_type: TV
+total_watched_episodes: 11
+given_score: 9
+watch_status: Completed
+
+title: 3-gatsu no Lion
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: 3D Kanojo: Real Girl
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: 91 Days
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Completed
+
+title: Accel World
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Accel World: Infinite∞Burst
+show_type: Movie
+total_watched_episodes: 1
+given_score: 10
+watch_status: Completed
+
+title: Aho Girl
+show_type: TV
+total_watched_episodes: 2
+given_score: 0
+watch_status: On-Hold
+
+title: Ajin
+show_type: TV
+total_watched_episodes: 13
+given_score: 7
+watch_status: Completed
+
+title: Ajin Part 2
+show_type: TV
+total_watched_episodes: 13
+given_score: 6
+watch_status: Completed
+
+title: Akira
+show_type: Movie
+total_watched_episodes: 1
+given_score: 7
+watch_status: Completed
+
+title: Aldnoah.Zero
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Aldnoah.Zero Part 2
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: Alice to Zouroku
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Angel Beats!
+show_type: TV
+total_watched_episodes: 13
+given_score: 8
+watch_status: Completed
+
+title: Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.
+show_type: TV
+total_watched_episodes: 11
+given_score: 10
+watch_status: Completed
+
+title: Ano Natsu de Matteru
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Another
+show_type: TV
+total_watched_episodes: 12
+given_score: 6
+watch_status: Completed
+
+title: Ansatsu Kyoushitsu
+show_type: TV
+total_watched_episodes: 22
+given_score: 10
+watch_status: Completed
+
+title: Ansatsu Kyoushitsu 2nd Season
+show_type: TV
+total_watched_episodes: 25
+given_score: 9
+watch_status: Completed
+
+title: Ao no Exorcist
+show_type: TV
+total_watched_episodes: 25
+given_score: 7
+watch_status: Completed
+
+title: Ao no Exorcist: Kyoto Fujouou-hen
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: Arakawa Under the Bridge
+show_type: TV
+total_watched_episodes: 0
+given_score: 7
+watch_status: Watching
+
+title: Baka to Test to Shoukanjuu
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Baka to Test to Shoukanjuu Ni!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Bakemono no Ko
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Bakuman.
+show_type: TV
+total_watched_episodes: 25
+given_score: 9
+watch_status: Completed
+
+title: Bakuman. 2nd Season
+show_type: TV
+total_watched_episodes: 25
+given_score: 10
+watch_status: Completed
+
+title: Bakuman. 3rd Season
+show_type: TV
+total_watched_episodes: 25
+given_score: 9
+watch_status: Completed
+
+title: Barakamon
+show_type: TV
+total_watched_episodes: 4
+given_score: 0
+watch_status: Watching
+
+title: Beelzebub
+show_type: TV
+total_watched_episodes: 60
+given_score: 8
+watch_status: Completed
+
+title: Black Clover
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Dropped
+
+title: Blame! Movie
+show_type: Movie
+total_watched_episodes: 1
+given_score: 0
+watch_status: Completed
+
+title: Bleach
+show_type: TV
+total_watched_episodes: 366
+given_score: 8
+watch_status: Completed
+
+title: Blend S
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Boku dake ga Inai Machi
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Boku no Hero Academia
+show_type: TV
+total_watched_episodes: 13
+given_score: 10
+watch_status: Completed
+
+title: Boku no Hero Academia 2nd Season
+show_type: TV
+total_watched_episodes: 25
+given_score: 8
+watch_status: Completed
+
+title: Bokutachi wa Benkyou ga Dekinai
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Boruto: Naruto the Movie
+show_type: Movie
+total_watched_episodes: 1
+given_score: 6
+watch_status: Completed
+
+title: Btooom!
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Bungou Stray Dogs 2nd Season
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Byousoku 5 Centimeter
+show_type: Movie
+total_watched_episodes: 3
+given_score: 9
+watch_status: Completed
+
+title: Chainsaw Man
+show_type: TV
+total_watched_episodes: 0
+given_score: 9
+watch_status: Watching
+
+title: Charlotte
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: ChäoS;Child
+show_type: TV
+total_watched_episodes: 12
+given_score: 5
+watch_status: Completed
+
+title: ChäoS;HEAd
+show_type: TV
+total_watched_episodes: 12
+given_score: 6
+watch_status: Completed
+
+title: Clannad
+show_type: TV
+total_watched_episodes: 23
+given_score: 8
+watch_status: Completed
+
+title: Clannad: After Story
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Clockwork Planet
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Code Geass: Hangyaku no Lelouch
+show_type: TV
+total_watched_episodes: 25
+given_score: 8
+watch_status: Completed
+
+title: Code Geass: Hangyaku no Lelouch R2
+show_type: TV
+total_watched_episodes: 25
+given_score: 9
+watch_status: Completed
+
+title: Colorful (Movie)
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation
+show_type: TV
+total_watched_episodes: 13
+given_score: 8
+watch_status: Completed
+
+title: Danshi Koukousei no Nichijou
+show_type: TV
+total_watched_episodes: 12
+given_score: 10
+watch_status: Completed
+
+title: Darker than Black: Kuro no Keiyakusha
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Death March kara Hajimaru Isekai Kyousoukyoku
+show_type: TV
+total_watched_episodes: 12
+given_score: 5
+watch_status: Completed
+
+title: Death Note
+show_type: TV
+total_watched_episodes: 37
+given_score: 9
+watch_status: Completed
+
+title: Death Note: Rewrite
+show_type: Special
+total_watched_episodes: 2
+given_score: 10
+watch_status: Completed
+
+title: Death Parade
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Drifters
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Durarara!!
+show_type: TV
+total_watched_episodes: 24
+given_score: 8
+watch_status: Completed
+
+title: Durarara!!x2 Ketsu
+show_type: TV
+total_watched_episodes: 12
+given_score: 10
+watch_status: Completed
+
+title: Durarara!!x2 Shou
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Durarara!!x2 Ten
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Elfen Lied
+show_type: TV
+total_watched_episodes: 13
+given_score: 7
+watch_status: Completed
+
+title: Fate/Apocrypha
+show_type: TV
+total_watched_episodes: 25
+given_score: 7
+watch_status: Completed
+
+title: Fate/kaleid liner Prisma☆Illya
+show_type: TV
+total_watched_episodes: 10
+given_score: 6
+watch_status: Completed
+
+title: Fate/stay night Movie: Heaven's Feel - I. Presage Flower
+show_type: Movie
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Fate/stay night: Unlimited Blade Works
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Fate/stay night: Unlimited Blade Works 2nd Season
+show_type: TV
+total_watched_episodes: 13
+given_score: 9
+watch_status: Completed
+
+title: Fate/Zero
+show_type: TV
+total_watched_episodes: 13
+given_score: 8
+watch_status: Completed
+
+title: Fate/Zero 2nd Season
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Flying Witch
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Gamers!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: On-Hold
+
+title: Gate: Jieitai Kanochi nite, Kaku Tatakaeri
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Completed
+
+title: Gate: Jieitai Kanochi nite, Kaku Tatakaeri Part 2
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Gochuumon wa Usagi desu ka?
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: God Eater
+show_type: TV
+total_watched_episodes: 13
+given_score: 7
+watch_status: Completed
+
+title: Godzilla 1: Kaijuu Wakusei
+show_type: Movie
+total_watched_episodes: 1
+given_score: 6
+watch_status: Completed
+
+title: Gosick
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Guilty Crown
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Hachimitsu to Clover
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Hachimitsu to Clover II
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Haikyuu!!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Haikyuu!! Karasuno Koukou vs. Shiratorizawa Gakuen Koukou
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Haikyuu!! Second Season
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Hanasaku Iroha
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Handa-kun
+show_type: TV
+total_watched_episodes: 12
+given_score: 5
+watch_status: Completed
+
+title: Happy Sugar Life
+show_type: TV
+total_watched_episodes: 1
+given_score: 7
+watch_status: Watching
+
+title: Hataraku Maou-sama!
+show_type: TV
+total_watched_episodes: 13
+given_score: 9
+watch_status: Completed
+
+title: Hello World
+show_type: Movie
+total_watched_episodes: 1
+given_score: 6
+watch_status: Completed
+
+title: Higashi no Eden
+show_type: TV
+total_watched_episodes: 11
+given_score: 7
+watch_status: Completed
+
+title: Higashi no Eden Movie I: The King of Eden
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Higashi no Eden Movie II: Paradise Lost
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Hoshi wo Ou Kodomo
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Hotarubi no Mori e
+show_type: Movie
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Howl no Ugoku Shiro
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Hyouka
+show_type: TV
+total_watched_episodes: 22
+given_score: 8
+watch_status: Completed
+
+title: Ichiban Ushiro no Daimaou
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Inuyashiki
+show_type: TV
+total_watched_episodes: 11
+given_score: 0
+watch_status: Completed
+
+title: Ixion Saga DT
+show_type: TV
+total_watched_episodes: 1
+given_score: 7
+watch_status: Watching
+
+title: Just Because!
+show_type: TV
+total_watched_episodes: 2
+given_score: 0
+watch_status: Watching
+
+title: Juuni Kokuki
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: K-On!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: K-On!!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Kakegurui
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Kami nomi zo Shiru Sekai
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Kanata no Astra
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Kimi ni Todoke
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Dropped
+
+title: Kimi no Koe wo Todoketai
+show_type: Movie
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Kimi no Na wa.
+show_type: Movie
+total_watched_episodes: 1
+given_score: 10
+watch_status: Completed
+
+title: Kimi no Suizou wo Tabetai
+show_type: Movie
+total_watched_episodes: 1
+given_score: 10
+watch_status: Completed
+
+title: Kiniro Mosaic
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Kino no Tabi: The Beautiful World - The Animated Series
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Kiseijuu: Sei no Kakuritsu
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Knight's & Magic
+show_type: TV
+total_watched_episodes: 2
+given_score: 4
+watch_status: Dropped
+
+title: Kobayashi-san Chi no Maid Dragon
+show_type: TV
+total_watched_episodes: 13
+given_score: 10
+watch_status: Completed
+
+title: Koe no Katachi
+show_type: Movie
+total_watched_episodes: 1
+given_score: 10
+watch_status: Completed
+
+title: Koi to Uso
+show_type: TV
+total_watched_episodes: 12
+given_score: 4
+watch_status: Completed
+
+title: Kokkoku
+show_type: TV
+total_watched_episodes: 2
+given_score: 8
+watch_status: Watching
+
+title: Kokoro Connect
+show_type: TV
+total_watched_episodes: 5
+given_score: 8
+watch_status: Watching
+
+title: Kono Subarashii Sekai ni Shukufuku wo!
+show_type: TV
+total_watched_episodes: 10
+given_score: 10
+watch_status: Completed
+
+title: Kono Subarashii Sekai ni Shukufuku wo! 2
+show_type: TV
+total_watched_episodes: 10
+given_score: 9
+watch_status: Completed
+
+title: Kotonoha no Niwa
+show_type: Movie
+total_watched_episodes: 1
+given_score: 0
+watch_status: Completed
+
+title: Kuroko no Basket
+show_type: TV
+total_watched_episodes: 25
+given_score: 0
+watch_status: Completed
+
+title: Kuroko no Basket 2nd Season
+show_type: TV
+total_watched_episodes: 25
+given_score: 0
+watch_status: Completed
+
+title: Kuroko no Basket 3rd Season
+show_type: TV
+total_watched_episodes: 25
+given_score: 0
+watch_status: Completed
+
+title: Kuromukuro
+show_type: TV
+total_watched_episodes: 26
+given_score: 5
+watch_status: Completed
+
+title: Kyou kara Maou!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Log Horizon
+show_type: TV
+total_watched_episodes: 4
+given_score: 8
+watch_status: Watching
+
+title: Log Horizon 2nd Season
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Made in Abyss
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Magi: The Kingdom of Magic
+show_type: TV
+total_watched_episodes: 25
+given_score: 5
+watch_status: Completed
+
+title: Magi: The Labyrinth of Magic
+show_type: TV
+total_watched_episodes: 25
+given_score: 5
+watch_status: Completed
+
+title: Mahou Shoujo Madoka★Magica
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Mahou Shoujo Madoka★Magica Movie 3: Hangyaku no Monogatari
+show_type: Movie
+total_watched_episodes: 1
+given_score: 4
+watch_status: Completed
+
+title: Mahouka Koukou no Rettousei
+show_type: TV
+total_watched_episodes: 26
+given_score: 5
+watch_status: Completed
+
+title: Mahoutsukai no Yome
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Watching
+
+title: Maoyuu Maou Yuusha
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Masamune-kun no Revenge
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Completed
+
+title: Mayoiga
+show_type: TV
+total_watched_episodes: 12
+given_score: 3
+watch_status: Completed
+
+title: Megalo Box
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Metal Fight Beyblade
+show_type: TV
+total_watched_episodes: 51
+given_score: 9
+watch_status: Completed
+
+title: Miira no Kaikata
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Minami-ke
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Mirai Nikki (TV)
+show_type: TV
+total_watched_episodes: 26
+given_score: 0
+watch_status: Completed
+
+title: Mob Psycho 100
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Completed
+
+title: Mondaiji-tachi ga Isekai kara Kuru Sou desu yo?
+show_type: TV
+total_watched_episodes: 10
+given_score: 9
+watch_status: Completed
+
+title: Mushishi
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Nanbaka
+show_type: TV
+total_watched_episodes: 13
+given_score: 8
+watch_status: Completed
+
+title: Nanbaka 2
+show_type: ONA
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Naruto
+show_type: TV
+total_watched_episodes: 220
+given_score: 7
+watch_status: Completed
+
+title: Naruto: Shippuuden
+show_type: TV
+total_watched_episodes: 500
+given_score: 8
+watch_status: Completed
+
+title: Neon Genesis Evangelion
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Net-juu no Susume
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Watching
+
+title: Netoge no Yome wa Onnanoko ja Nai to Omotta?
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: New Game!
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: NHK ni Youkoso!
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Nichijou
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: No Game No Life
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: No Game No Life: Zero
+show_type: Movie
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Noragami
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: Noragami Aragoto
+show_type: TV
+total_watched_episodes: 13
+given_score: 7
+watch_status: Completed
+
+title: Occultic;Nine
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: One Punch Man
+show_type: TV
+total_watched_episodes: 12
+given_score: 10
+watch_status: Completed
+
+title: Orange
+show_type: TV
+total_watched_episodes: 13
+given_score: 10
+watch_status: Completed
+
+title: Ousama Game The Animation
+show_type: TV
+total_watched_episodes: 12
+given_score: 2
+watch_status: Dropped
+
+title: Outbreak Company
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: Overlord
+show_type: TV
+total_watched_episodes: 13
+given_score: 8
+watch_status: Completed
+
+title: Overlord II
+show_type: TV
+total_watched_episodes: 13
+given_score: 9
+watch_status: Completed
+
+title: Overlord III
+show_type: TV
+total_watched_episodes: 5
+given_score: 0
+watch_status: Watching
+
+title: Owari no Seraph
+show_type: TV
+total_watched_episodes: 12
+given_score: 6
+watch_status: Completed
+
+title: Owari no Seraph: Nagoya Kessen-hen
+show_type: TV
+total_watched_episodes: 12
+given_score: 5
+watch_status: Completed
+
+title: Perfect Blue
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Planetes
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Princess Principal
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Psycho-Pass
+show_type: TV
+total_watched_episodes: 0
+given_score: 9
+watch_status: Plan to Watch
+
+title: Psycho-Pass 2
+show_type: TV
+total_watched_episodes: 11
+given_score: 0
+watch_status: Completed
+
+title: Quanzhi Gaoshou
+show_type: ONA
+total_watched_episodes: 12
+given_score: 10
+watch_status: Completed
+
+title: Rakuen Tsuihou
+show_type: Movie
+total_watched_episodes: 1
+given_score: 4
+watch_status: Completed
+
+title: Re:Zero kara Hajimeru Isekai Seikatsu
+show_type: TV
+total_watched_episodes: 25
+given_score: 8
+watch_status: Completed
+
+title: Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season
+show_type: TV
+total_watched_episodes: 13
+given_score: 10
+watch_status: Completed
+
+title: Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2
+show_type: TV
+total_watched_episodes: 12
+given_score: 10
+watch_status: Completed
+
+title: ReLIFE
+show_type: TV
+total_watched_episodes: 13
+given_score: 9
+watch_status: Completed
+
+title: Rokudenashi Majutsu Koushi to Akashic Records
+show_type: TV
+total_watched_episodes: 12
+given_score: 6
+watch_status: Completed
+
+title: Saiki Kusuo no Ψ-nan 2
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Sakura Quest
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Sakura-sou no Pet na Kanojo
+show_type: TV
+total_watched_episodes: 1
+given_score: 10
+watch_status: Watching
+
+title: Sankarea
+show_type: TV
+total_watched_episodes: 12
+given_score: 8
+watch_status: Completed
+
+title: Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai
+show_type: TV
+total_watched_episodes: 3
+given_score: 8
+watch_status: Watching
+
+title: Sen to Chihiro no Kamikakushi
+show_type: Movie
+total_watched_episodes: 1
+given_score: 8
+watch_status: Completed
+
+title: Serial Experiments Lain
+show_type: TV
+total_watched_episodes: 4
+given_score: 2
+watch_status: Dropped
+
+title: Shakugan no Shana
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Shakugan no Shana II (Second)
+show_type: TV
+total_watched_episodes: 24
+given_score: 7
+watch_status: Completed
+
+title: Shakugan no Shana III (Final)
+show_type: TV
+total_watched_episodes: 24
+given_score: 8
+watch_status: Completed
+
+title: Shelter (Music)
+show_type: Music
+total_watched_episodes: 1
+given_score: 10
+watch_status: Completed
+
+title: Shigatsu wa Kimi no Uso
+show_type: TV
+total_watched_episodes: 22
+given_score: 7
+watch_status: Completed
+
+title: Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Shingeki no Kyojin
+show_type: TV
+total_watched_episodes: 25
+given_score: 10
+watch_status: Completed
+
+title: Shingeki no Kyojin Season 2
+show_type: TV
+total_watched_episodes: 12
+given_score: 6
+watch_status: Completed
+
+title: Shinsekai yori
+show_type: TV
+total_watched_episodes: 25
+given_score: 7
+watch_status: Completed
+
+title: Shirobako
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Shokugeki no Souma
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Shokugeki no Souma: Ni no Sara
+show_type: TV
+total_watched_episodes: 13
+given_score: 9
+watch_status: Completed
+
+title: Shokugeki no Souma: San no Sara
+show_type: TV
+total_watched_episodes: 1
+given_score: 0
+watch_status: Watching
+
+title: Shoujo Shuumatsu Ryokou
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Sora yori mo Tooi Basho
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Soul Eater
+show_type: TV
+total_watched_episodes: 51
+given_score: 5
+watch_status: Dropped
+
+title: Sousei no Onmyouji
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Steins;Gate
+show_type: TV
+total_watched_episodes: 24
+given_score: 9
+watch_status: Completed
+
+title: Steins;Gate 0
+show_type: TV
+total_watched_episodes: 23
+given_score: 0
+watch_status: Completed
+
+title: Suisei no Gargantia
+show_type: TV
+total_watched_episodes: 13
+given_score: 7
+watch_status: Completed
+
+title: Summer Wars
+show_type: Movie
+total_watched_episodes: 1
+given_score: 8
+watch_status: Completed
+
+title: Suzumiya Haruhi no Yuuutsu
+show_type: TV
+total_watched_episodes: 14
+given_score: 8
+watch_status: Completed
+
+title: Suzumiya Haruhi no Yuuutsu (2009)
+show_type: TV
+total_watched_episodes: 14
+given_score: 0
+watch_status: Completed
+
+title: Sword Art Online
+show_type: TV
+total_watched_episodes: 25
+given_score: 3
+watch_status: Completed
+
+title: Sword Art Online II
+show_type: TV
+total_watched_episodes: 24
+given_score: 4
+watch_status: Completed
+
+title: Sword Art Online Movie: Ordinal Scale
+show_type: Movie
+total_watched_episodes: 1
+given_score: 8
+watch_status: Completed
+
+title: Tamako Love Story
+show_type: Movie
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Tamako Market
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Tamayura: Hitotose
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Tate no Yuusha no Nariagari
+show_type: TV
+total_watched_episodes: 25
+given_score: 7
+watch_status: Completed
+
+title: Tenki no Ko
+show_type: Movie
+total_watched_episodes: 1
+given_score: 8
+watch_status: Completed
+
+title: Toki wo Kakeru Shoujo
+show_type: Movie
+total_watched_episodes: 1
+given_score: 8
+watch_status: Completed
+
+title: Tokyo Ghoul
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: Tokyo Ghoul √A
+show_type: TV
+total_watched_episodes: 12
+given_score: 3
+watch_status: Completed
+
+title: Tonari no Totoro
+show_type: Movie
+total_watched_episodes: 1
+given_score: 9
+watch_status: Completed
+
+title: Toradora!
+show_type: TV
+total_watched_episodes: 25
+given_score: 9
+watch_status: Completed
+
+title: Tsuki ga Kirei
+show_type: TV
+total_watched_episodes: 1
+given_score: 0
+watch_status: On-Hold
+
+title: Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?
+show_type: Movie
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Uchuu Kyoudai
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Vampire Knight
+show_type: TV
+total_watched_episodes: 13
+given_score: 6
+watch_status: Completed
+
+title: Vampire Knight Guilty
+show_type: TV
+total_watched_episodes: 13
+given_score: 4
+watch_status: Completed
+
+title: Violet Evergarden
+show_type: TV
+total_watched_episodes: 1
+given_score: 0
+watch_status: Watching
+
+title: Vivy: Fluorite Eye's Song
+show_type: TV
+total_watched_episodes: 13
+given_score: 9
+watch_status: Completed
+
+title: World Trigger
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Wotaku ni Koi wa Muzukashii
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Yahari Ore no Seishun Love Comedy wa Machigatteiru.
+show_type: TV
+total_watched_episodes: 5
+given_score: 9
+watch_status: Watching
+
+title: Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Yakusoku no Neverland
+show_type: TV
+total_watched_episodes: 12
+given_score: 9
+watch_status: Completed
+
+title: Yuri!!! on Ice
+show_type: TV
+total_watched_episodes: 4
+given_score: 0
+watch_status: Dropped
+
+title: Yuru Camp△
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Yuru Yuri
+show_type: TV
+total_watched_episodes: 0
+given_score: 0
+watch_status: Plan to Watch
+
+title: Zankyou no Terror
+show_type: TV
+total_watched_episodes: 11
+given_score: 10
+watch_status: Completed
+
+title: Zero no Tsukaima
+show_type: TV
+total_watched_episodes: 13
+given_score: 5
+watch_status: Completed
+
+title: Zero no Tsukaima F
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Completed
+
+title: Zero no Tsukaima: Futatsuki no Kishi
+show_type: TV
+total_watched_episodes: 12
+given_score: 7
+watch_status: Completed
+
+title: Zero no Tsukaima: Princesses no Rondo
+show_type: TV
+total_watched_episodes: 12
+given_score: 0
+watch_status: Completed
