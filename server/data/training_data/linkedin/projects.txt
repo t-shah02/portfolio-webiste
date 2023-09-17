@@ -1,63 +1,36 @@
-Amazon Reviews | NLP and Sentiment Analysis
-Jul 2023 - Aug 2023
-
-In this project, we used fundamental data analysis, machine learning and sentiment analysis skills to examine product reviews from a dozen unique categories. We wanted to see customers' general positivity, negativity or neutrality while shopping on Amazon, whether certain categories have better/worse sentiments than each other, and if we can use ML and NLP to make category and star rating predictions.
-
+Project name: Amazon Reviews | NLP and Sentiment Analysis
+Time spent: Jul 2023 - Aug 2023
+Description: In this project, we used fundamental data analysis, machine learning and sentiment analysis skills to examine product reviews from a dozen unique categories. We wanted to see customers' general positivity, negativity or neutrality while shopping on Amazon, whether certain categories have better/worse sentiments than each other, and if we can use ML and NLP to make category and star rating predictions.
 Tech stack: Python, Pandas, matplotlib, PySpark, spacy, scikit-learn
-
 Github: https://github.com/t-shah02/amazon-reviews-nlp-sentiment-analysis
 
-Anime Recommender
-Nov 2022 - Dec 2022
-
-An anime recommender that gives suggestions to users based on features such as genres, ratings and relevant keywords. This project uses natural language processing and basic dataset querying from MyAnimeList to give the best results to users, based on word similarity, lemmatization and synonyms. 
-
-Tech stack:
-Frontend: ReactJS, Typescript, Material UI 
-Backend: Python, Flask, nltk, pandas 
-Deployment: Vercel and Heroku eco dynos
-
+Project name: Anime Recommender
+Time spent: Nov 2022 - Dec 2022
+Description: An anime recommender that gives suggestions to users based on features such as genres, ratings and relevant keywords. This project uses natural language processing and basic dataset querying from MyAnimeList to give the best results to users, based on word similarity, lemmatization and synonyms. 
+Tech stack: ReactJS, Typescript, Material UI, Python, Flask, nltk, pandas, Vercel and Heroku eco dynos
 Github: https://github.com/t-shah02/anime_recommender_backend
 
-Pokedex Querier
-Sep 2022 - Sep 2022
-
-A basic Pokedex querier application that uses the Pokedex API to search for information pertaining to the Pokemon name given by the user. This project was a great stepping stone into learning about the advantages of using React, hooks like useState and useEffect, and dealing with side effects on the client side as a result of making HTTP requests to an API.
-
-Tech stack:
-Frontend: ReactJS, Javascript, Bulma
-
+Project name: Pokedex Querier
+Time spent: Sep 2022 - Sep 2022
+Description: A basic Pokedex querier application that uses the Pokedex API to search for information pertaining to the Pokemon name given by the user. This project was a great stepping stone into learning about the advantages of using React, hooks like useState and useEffect, and dealing with side effects on the client side as a result of making HTTP requests to an API.
+Tech stack: ReactJS, Javascript, Bulma
 Github: https://github.com/t-shah02/pokedex
 
-Shopinder (RUHacks 2022)
-May 2022 - May 2022
-
-A shopping reminder web app, where users can create a reminder-dependent shopping list for products in online stores. The user would simply need to enter a URL to a product on a store page, and we would automatically scrape relevant information pertaining to it such as title, price, store and quantity. Every time a user added a product to their shopping list, they would have the option to be notified of the date of their selection via SMS or email. Shopping lists would be persisted in a database tied to an authenticated user via Google OAuth. 
-
-Tech stack:
-Frontend: Svelte, Bulma, Javascript, HTML and CSS
-Backend: Python, Flask, BeautifulSoup4, MongoDB, GoogleOAuth, Twilio, SMTPLib
-
+Project name: Shopinder (RUHacks 2022)
+Time spent: May 2022 - May 2022
+Description: A shopping reminder web app, where users can create a reminder-dependent shopping list for products in online stores. The user would simply need to enter a URL to a product on a store page, and we would automatically scrape relevant information pertaining to it such as title, price, store and quantity. Every time a user added a product to their shopping list, they would have the option to be notified of the date of their selection via SMS or email. Shopping lists would be persisted in a database tied to an authenticated user via Google OAuth. 
+Tech stack: Svelte, Bulma, Javascript, HTML CSS, Python, Flask, BeautifulSoup4, MongoDB, GoogleOAuth, Twilio, SMTPLib
 Github: https://github.com/t-shah02/shopinder
 
-UniMeetups (CalgaryHacks 2022)
-Feb 2022 - Feb 2022
-
-A social web app that would connect university students with like-minded interests together. Registered users would automatically be assigned to a hub that belongs to the closest university to them geographically, and would automatically be matched with other users, based on a tag-based algorithm.
+Project name: UniMeetups (CalgaryHacks 2022)
+Time spent: Feb 2022 - Feb 2022
+Description: A social web app that would connect university students with like-minded interests together. Registered users would automatically be assigned to a hub that belongs to the closest university to them geographically, and would automatically be matched with other users, based on a tag-based algorithm.
 If a user found somebody else interesting, they would have the option of sending a meetup request to them, and if they accepted, they would mutually become classmates. Users could also create public meetups in their university hub, for other users to view, and hopefully interact with larger pools of people in real life. This was my first hackathon, and I learned a lot about web development and garnered interest in exploring more about backend development in the future.
-
-Tech stack:
-Frontend: HTML, CSS, Dynamic Jinja templates and Bootstrap 5
-Backend: Python, Flask, MongoDB, Google Maps API
-
+Tech stack: HTML, CSS, Dynamic Jinja templates, Bootstrap 5,  Python, Flask, MongoDB, Google Maps API
 Github: https://github.com/t-shah02/UniMeetups
 
-Tunes.Java | Desktop Music Player
-Sep 2021 - Dec 2021
-
-An old-school desktop music player, that could stream MP3 files from the user's filesystem. Users also had the option to create, edit and save playlists locally via JSON serialization. 
-
-Tech stack:
-Java 8, Swing, Java FX, org.json, UML (draw.io)
-
+Project name: Tunes.Java | Desktop Music Player
+Time spent: Sep 2021 - Dec 2021
+Description: An old-school desktop music player, that could stream MP3 files from the user's filesystem. Users also had the option to create, edit and save playlists locally via JSON serialization. 
+Tech stack: Java 8, Swing, Java FX, org.json, UML (draw.io)
 Github: https://github.com/t-shah02/java-tunes

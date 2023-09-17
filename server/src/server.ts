@@ -5,7 +5,7 @@ import { IEmailRequestBody } from "./types/email";
 import { sendEmail } from "./util/email";
 import { SERVER_PORT, CLIENT_BASE_URL } from "./constants/server";
 import { emailRateLimiter, aiChatRateLimiter } from "./util/redis";
-import { constructQAChain, answerQuestion } from "./util/llm";
+import { constructQAChain, answerQuestion } from "./util/ai";
 import { RetrievalQAChain } from "langchain/chains";
 
 const app = express();

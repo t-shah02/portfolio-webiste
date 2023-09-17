@@ -1,6 +1,5 @@
 Hello World, 
 My name is Tanish Shah, and I am an avid fan of software engineering, data science and machine learning. I have over 5 months of work experience in development, where I have gained exposure to full-stack web technologies such as React, NextJS, Typescript, PostgreSQL and MongoDB.
-
 I have also taken courses in data structures and algorithms, software engineering design and data science/machine learning. 
 
 Programming languages: Python, Typescript, Javascript, Java, C, C++ and SQL

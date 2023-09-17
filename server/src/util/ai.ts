@@ -1,17 +1,17 @@
 import { OpenAI } from "langchain/llms/openai";
 import { HNSWLib } from "langchain/vectorstores/hnswlib";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
-import { RetrievalQAChain } from "langchain/chains";
+import { PromptTemplate } from "langchain/prompts";
+import { RetrievalQAChain, loadQAStuffChain } from "langchain/chains";
 import { Document } from "langchain/document";
 import { JSONLoader } from "langchain/document_loaders/fs/json";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import {
   LLM_TEMPERATURE,
   MAX_LLM_QUESTION_LENGTH,
+  MAX_VECTOR_SEARCH_DOCUMENTS_K,
   OPENAI_API_KEY,
   OPENAI_MODEL_NAME,
-  TEXT_SPLITTER_CHUNK_OVERLAP,
-  TEXT_SPLITTER_CHUNK_SIZE,
+  QA_PROMPT_STRING,
   TRAINING_DATA_CONFIG,
   TRAINING_DATA_DIRECTORY_PATH,
   TRAINING_DATA_VECTOR_STORE_PATH,
@@ -21,16 +21,22 @@ import path from "path";
 
 const getDocumentsFromTextFile = async (
   filePath: string,
-  textSeperators: string[],
 ): Promise<Document[]> => {
+  const txtFileDocuments: Document[] = [];
   const rawContent = await fs.readFile(filePath, "utf-8");
-  const textSplitter = new RecursiveCharacterTextSplitter({
-    separators: textSeperators,
-    chunkOverlap: TEXT_SPLITTER_CHUNK_OVERLAP,
-    chunkSize: TEXT_SPLITTER_CHUNK_SIZE,
+  const splitRawContent = rawContent.split("\n\n");
+
+  splitRawContent.forEach((currentTextSplit) => {
+    const txtDoc = new Document({
+      pageContent: currentTextSplit,
+      metadata: {
+        sourceFilePath: filePath,
+      },
+    });
+    txtFileDocuments.push(txtDoc);
   });
 
-  return textSplitter.createDocuments([rawContent]);
+  return txtFileDocuments;
 };
 
 const getDocumentsFromJSONFile = async (
@@ -62,12 +68,7 @@ const getFileDocuments = async (
 
   switch (fileType) {
     case ".txt":
-      const textSeperators = getConfigProperty(
-        fileName,
-        folderName,
-        "textSeperators",
-      );
-      return await getDocumentsFromTextFile(trainingFilePath, textSeperators);
+      return await getDocumentsFromTextFile(trainingFilePath);
 
     case ".json":
       const jsonKeys = getConfigProperty(fileName, folderName, "jsonKeys");
@@ -152,10 +153,18 @@ export async function constructQAChain(): Promise<RetrievalQAChain> {
     vectorStore.save(TRAINING_DATA_VECTOR_STORE_PATH);
   }
 
-  const vectorStoreRetriever = vectorStore.asRetriever();
+  const vectorStoreRetriever = vectorStore.asRetriever({
+    k: MAX_VECTOR_SEARCH_DOCUMENTS_K,
+  });
 
-  const finalQAChain = RetrievalQAChain.fromLLM(llm, vectorStoreRetriever);
-  return finalQAChain;
+  const promptTemplate = PromptTemplate.fromTemplate(QA_PROMPT_STRING);
+
+  const qaChain = new RetrievalQAChain({
+    combineDocumentsChain: loadQAStuffChain(llm, { prompt: promptTemplate }),
+    retriever: vectorStoreRetriever,
+  });
+
+  return qaChain;
 }
 
 export async function answerQuestion(

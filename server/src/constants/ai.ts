@@ -10,10 +10,19 @@ export const TRAINING_DATA_DIRECTORY_PATH = "./data/training_data";
 export const TRAINING_DATA_CONFIG: TTrainingConfig = {
   fun: {
     "mal.txt": {
-      "textSeperators": ["\n\n"],
+      textSeperators: ["\n\n"],
     },
   },
 };
+export const MAX_VECTOR_SEARCH_DOCUMENTS_K = 2;
+export const QA_PROMPT_STRING = `Assume you are playing the role of a tour guide for a personal website of an individual named Tanish Shah.
+Use the provided pieces of relevant context to answer the question to the best of your ability
+If the question refers to publicly avaiable information, you can incorporate that into your answer too
+If there isn't enough information to answer a question or you aren't sure, please respond appropriately!  
 
-export const TEXT_SPLITTER_CHUNK_OVERLAP = 10;
-export const TEXT_SPLITTER_CHUNK_SIZE = 75;
+Here is the context:
+{context}
+
+Question: {question}
+Answer: 
+`;

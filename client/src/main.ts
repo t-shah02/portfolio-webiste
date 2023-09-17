@@ -136,3 +136,12 @@ if (
     }
   });
 }
+
+window.addEventListener("show.hs.tooltip", ($tooltipEl) => {
+  console.log($tooltipEl);
+});
+
+window.addEventListener("hide.hs.tooltip", ($tooltipEl) => {
+  $tooltipEl.preventDefault();
+  console.log($tooltipEl);
+});
