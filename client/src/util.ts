@@ -1,5 +1,8 @@
 import { ICanvasObjectProperties } from "./types/object";
 
+export const SERVER_URL =
+  import.meta.env.VITE_SERVER_BASE_URL || "http://localhost:3000";
+
 // https://stackoverflow.com/questions/4959975/generate-random-number-between-two-numbers-in-javascript
 export function randomNumberFromInterval(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1) + min);
