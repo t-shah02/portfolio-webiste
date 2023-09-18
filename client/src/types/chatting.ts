@@ -6,6 +6,6 @@ export enum ESenderType {
 export interface IChatMessage {
   id: string;
   content: string;
-  dateSent: Date;
+  dateSent: number;
   type: ESenderType;
 }

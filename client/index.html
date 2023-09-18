@@ -544,11 +544,14 @@
       </button>
       <div id="chatting-window" style="width: 45%"
         class="hidden z-20 absolute bottom-16 right-14 flex flex-col bg-white border border-gray-200 shadow-xl rounded-xl">
-        <div class="p-4 md:p-6 space-y-5 divide-y-5">
-          <span class="flex align-middle justify-center mb-1 text-lg font-semibold uppercase text-blue-600">
+        <div class="p-4 md:p-6 space-y-5">
+          <span class="flex align-middle justify-center text-lg font-semibold uppercase text-blue-600">
             Chat with Tanish.AI
             <i class="fa-solid fa-robot ml-3 mt-1" style="color: black"></i>
           </span>
+          <h2 class="text-gray-600 text-center italic">
+            Note: This feature is still in development and may produce inaccurate answers
+          </h2>
           <div id="chat-messages-container" class="w-full h-60 scroll-smooth overflow-y-scroll bg-stone-100">
             <ul class="list-none" id="chat-messages-list">
 
@@ -558,10 +561,19 @@
             <input id="chat-message-input" type="text"
               class="p-4 w-full border border-gray-200 rounded-md text-md focus:border-blue-500 focus:ring-blue-500"
               placeholder="Ask a question about Tanish Shah..." />
+            <button type="button" id="loading-disabled-btn" disabled
+              class="hidden mt-2.5 inline-flex flex-shrink-0 justify-center items-center h-10 w-10 rounded-md">
+              <i class="fa-solid fa-spinner fa-spin"></i>
+            </button>
             <button type="button" id="send-chat-message-btn"
               class="mt-2.5 inline-flex flex-shrink-0 justify-center items-center h-10 w-10 rounded-md  bg-blue-600 hover:bg-blue-500">
               <i class="fa-solid fa-paper-plane" style="color: white"></i>
             </button>
+            <button type="button" id="clear-chat-history-btn"
+              class="mt-2.5 inline-flex flex-shrink-0 justify-center items-center h-10 w-10 rounded-md  bg-blue-600 hover:bg-blue-500">
+              <i class="fa-solid fa-trash" style="color: white"></i>
+            </button>
+
           </div>
         </div>
       </div>

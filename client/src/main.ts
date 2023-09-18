@@ -26,5 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
     "#chat-messages-container",
     "#chat-message-input",
     "#send-chat-message-btn",
+    "#clear-chat-history-btn",
+    "#loading-disabled-btn",
   );
 });

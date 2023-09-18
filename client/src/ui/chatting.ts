@@ -1,11 +1,27 @@
 import { SERVER_URL } from "../util";
 import { IAIChatResponseBody } from "../../../server/src/types/ai";
 import { IChatMessage, ESenderType } from "../types/chatting";
+// @ts-ignore
+import Typed from "typed.js";
 
 const botChatMessageStyle = `"bg-gray-800/[.1] border border-gray-200 text-sm text-gray-600 rounded-md p-4"`;
 const humanChatMessageStyle = `"bg-blue-50 border border-blue-200 text-sm text-blue-600 rounded-md p-4"`;
 const botChatMessageErrorStyle = `"bg-red-50 border border-red-200 text-sm text-red-600 rounded-md p-4"`;
 const localStorageMessagesKey = "previous-chat-messages";
+const dateFormatOptions: Intl.DateTimeFormatOptions = {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "numeric",
+  minute: "numeric",
+  hour12: true,
+};
+
+const clearMessagesFromLocalStorage = () => {
+  if (localStorage.getItem(localStorageMessagesKey)) {
+    localStorage.setItem(localStorageMessagesKey, "[]");
+  }
+};
 
 const loadMessagesFromLocalStorage = (): IChatMessage[] => {
   const chatMessages = localStorage.getItem(localStorageMessagesKey);
@@ -31,7 +47,8 @@ const addMessageToLocalStorage = (newChatMessage: IChatMessage | null) => {
 
 const generateMessageListNode = (
   message: IChatMessage | null,
-): HTMLLIElement => {
+  isTyping: boolean = false,
+) => {
   const messageElementClassName =
     message === null
       ? botChatMessageErrorStyle
@@ -48,10 +65,20 @@ const generateMessageListNode = (
     message === null
       ? "I am having some trouble communicating to the server right now!"
       : message.content;
+  const messageBodyId = `message-${message?.id}`;
+  const dateSent = new Date(message?.dateSent || Date.now());
+  const dateSentFormatString = dateSent.toLocaleDateString(
+    "en-us",
+    dateFormatOptions,
+  );
 
   const newMessageElement = document.createElement("li");
   newMessageElement.innerHTML = `<div class=${messageElementClassName} role="alert">
-  <span class="font-bold">${senderName}</span> ${messageBody}</div>`;
+    <span class="font-bold">${senderName}</span> 
+    <p id="${messageBodyId}">${isTyping ? "" : messageBody}</p>
+    <br/> 
+    <time class="uppercase text-sm block">${dateSentFormatString}</time>
+  </div>`;
 
   newMessageElement.style.listStyle = "none";
   newMessageElement.style.width = "50%";
@@ -66,7 +93,7 @@ const generateMessageListNode = (
     newMessageElement.style.marginRight = "auto";
   }
 
-  return newMessageElement;
+  return { newMessageElement, messageBody, messageBodyId };
 };
 
 const makeMessageObject = (
@@ -74,12 +101,12 @@ const makeMessageObject = (
   messageType: ESenderType,
 ): IChatMessage => {
   const messageId = crypto.randomUUID();
-  const currentTime = new Date(Date.now());
+  const dateSent = Date.now();
 
   return {
     id: messageId,
     type: messageType,
-    dateSent: currentTime,
+    dateSent,
     content: message,
   };
 };
@@ -155,58 +182,107 @@ export function setupChattingWindow(
   chatMessagesListId: string,
   chatMessageInputId: string,
   sendChatMessageButtonId: string,
+  clearChatHistoryButtonId: string,
+  loadingSpinnerDisabledBtnId: string,
 ) {
   const chatMessagesList = document.querySelector(chatMessagesListId);
   const chatMessageInput = document.querySelector(chatMessageInputId);
   const sendChatMessageButton = document.querySelector(sendChatMessageButtonId);
+  const clearChatHistoryButton = document.querySelector(
+    clearChatHistoryButtonId,
+  );
+  const loadingSpinnerDisabledBtn = document.querySelector(
+    loadingSpinnerDisabledBtnId,
+  );
 
-  if (chatMessagesList && chatMessageInput && sendChatMessageButton) {
+  if (
+    chatMessagesList &&
+    chatMessageInput &&
+    sendChatMessageButton &&
+    clearChatHistoryButton &&
+    loadingSpinnerDisabledBtn
+  ) {
     const actualChatMessageInput = chatMessageInput as HTMLInputElement;
     const actualChatMessagesList = chatMessagesList as HTMLDListElement;
     const actualSendChatMessageButton =
       sendChatMessageButton as HTMLButtonElement;
+    const actualClearChatHistoryButton =
+      clearChatHistoryButton as HTMLButtonElement;
+    const actualLoadingSpinnerDisabledBtn =
+      loadingSpinnerDisabledBtn as HTMLButtonElement;
 
     const messagesFromHistory = loadMessagesFromLocalStorage();
     messagesFromHistory.forEach((message) => {
-      const messageLiElement = generateMessageListNode(message);
+      const { newMessageElement: messageLiElement } =
+        generateMessageListNode(message);
       actualChatMessagesList.appendChild(messageLiElement);
     });
+
+    let loadingMessage = false;
 
     actualChatMessagesList.scrollTop = actualChatMessagesList.scrollHeight;
 
     const addNewMessageToChatWindow = async () => {
       if (!actualChatMessageInput.value.length) return;
+      if (loadingMessage) return;
 
       const humanMessage = makeMessageObject(
         actualChatMessageInput.value,
         ESenderType.User,
       );
-      const humanMessageLiElement = generateMessageListNode(humanMessage);
+      const { newMessageElement: humanMessageLiElement } =
+        generateMessageListNode(humanMessage);
       actualChatMessagesList.appendChild(humanMessageLiElement);
 
       addMessageToLocalStorage(humanMessage);
 
-      // const { chatMessage: chatBotMessage } = await askQuestion(
-      //   humanMessage.content,
-      // );
-
-      // addMessageToLocalStorage(chatBotMessage);
-
-      // const chatBotMessageLiElement = generateMessageListNode(chatBotMessage);
-      // actualChatMessagesList.appendChild(chatBotMessageLiElement);
-
       actualChatMessageInput.value = "";
+      actualChatMessagesList.scrollTop = actualChatMessagesList.scrollHeight;
+
+      loadingMessage = true;
+      actualLoadingSpinnerDisabledBtn.classList.remove("hidden");
+      actualSendChatMessageButton.classList.add("hidden");
+
+      const { chatMessage: chatBotMessage } = await askQuestion(
+        humanMessage.content,
+      );
+
+      loadingMessage = false;
+      actualLoadingSpinnerDisabledBtn.classList.add("hidden");
+      actualSendChatMessageButton.classList.remove("hidden");
+
+      addMessageToLocalStorage(chatBotMessage);
+
+      const {
+        newMessageElement: chatBotMessageLiElement,
+        messageBodyId,
+        messageBody,
+      } = generateMessageListNode(chatBotMessage, true);
+      actualChatMessagesList.appendChild(chatBotMessageLiElement);
+      new Typed(`#${messageBodyId}`, {
+        strings: [messageBody],
+        typeSpeed: 50,
+        loop: false,
+        showCursor: false,
+      });
+
       actualChatMessagesList.scrollTop = actualChatMessagesList.scrollHeight;
     };
 
     actualChatMessageInput.addEventListener("keydown", async (event) => {
       if (event.key === "Enter") {
-        await addNewMessageToChatWindow();
+        addNewMessageToChatWindow();
       }
     });
 
-    actualSendChatMessageButton.addEventListener("click", async () => {
-      await addNewMessageToChatWindow();
+    actualSendChatMessageButton.addEventListener(
+      "click",
+      addNewMessageToChatWindow,
+    );
+
+    actualClearChatHistoryButton.addEventListener("click", () => {
+      clearMessagesFromLocalStorage();
+      actualChatMessagesList.innerHTML = "";
     });
   }
 }
